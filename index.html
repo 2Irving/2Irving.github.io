@@ -124,6 +124,11 @@
     <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
 
   </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
         <li class="menu-item menu-item-about">
 
     <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
@@ -152,6 +157,199 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/828%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Xuser">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="简 站">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/10/10/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/828%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-title-link" itemprop="url">828数据结构</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-10-10 00:00:00 / 修改时间：19:36:23" itemprop="dateCreated datePublished" datetime="2024-10-10T00:00:00+08:00">2024-10-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><a href="#%E5%B0%8F%E9%A2%98">小题</a></li>
+<li><a href="#%E5%A4%A7%E9%A2%98">大题</a><ul>
+<li><a href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">数据结构</a></li>
+<li><a href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">操作系统</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BB%A3%E7%A0%81%E9%A2%98">代码题</a><ul>
+<li><a href="#%E9%93%BE%E8%A1%A8%E4%B8%80%E5%BE%8B%E4%BD%BF%E7%94%A8%E5%B8%A6%E5%A4%B4%E8%8A%82%E7%82%B9%E7%9A%84%E9%93%BE%E8%A1%A8%E6%96%B9%E4%BE%BF%E6%93%8D%E4%BD%9C">链表：一律使用带头节点的链表，方便操作</a></li>
+<li><a href="#%E6%A0%91">树:</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="小题"><a href="#小题" class="headerlink" title="小题"></a>小题</h2><ul>
+<li><p>数据结构与算法</p>
+</li>
+<li><p>树的节点与度的计算</p>
+<pre><code>  边数=节点数-1=n-1（除了根节点，每个节点有唯一被指）
+  度数总和等于边数：n-1=0* n0 +1* n1+2* n2...（度即是边）
+</code></pre>
+</li>
+<li><p>矩阵与广义表</p>
+<pre><code>  head：取表头元素，去括号
+  tail：去表头元素，不去括号
+</code></pre>
+</li>
+<li><p>图的遍历</p>
+<pre><code>  深度优先DFS：从一个节点开始，遍历它的所有邻接点，再从第一个邻接点开始，如此循环
+  广度优先BFS：从一个节点开始，向下层遍历，直到无法向下，回退至可向下遍历的点，直到所有节点被访问
+</code></pre>
+</li>
+</ul>
+<h2 id="大题"><a href="#大题" class="headerlink" title="大题"></a>大题</h2><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><ul>
+<li><p>树：</p>
+<p>  二叉树的遍历：NLR LNR LRN</p>
+<p>  线索二叉树</p>
+<p>  完全二叉树</p>
+<p>  平衡二叉树</p>
+<p>  哈夫曼树（带权路径长度）</p>
+</li>
+<li><p>图：</p>
+<p>  邻接矩阵与邻接表存储</p>
+<p>  最小生成树（不唯一）</p>
+<pre><code>  Prim求最小生成树(顶点开始发散)
+      
+      1从顶点开始，选取权值最小的边，最小边顶点加入生成树。
+      2再寻找生成树内权值最小的边，最小边顶点加入生成树，循环。
+
+  Kruskal求最小生成树（加入最小边）
+      
+      1将所有的边按照权值从小到大排序
+      2依次将边从小到大加入生成树
+      3若加入的边使树形成回路，则舍去
+      直至所有定点加入生成树
+</code></pre>
+<p>  最短路径</p>
+<pre><code>  Dijkstra求最短路径
+
+  Floyd求最短路径
+</code></pre>
+</li>
+<li><p>排序算法（菜鸟教程）：</p>
+<p>  插入排序类</p>
+<pre><code>  直接插入：选取确定序列后的一个元素，向前寻找插入位置
+
+  希尔排序：按照步长，分为多个小组进行直接插入排序
+</code></pre>
+<p>  交换排序类</p>
+<pre><code>  冒泡排序：从前向后冒，一趟确定一个
+
+  快速排序：位置待定法，前后指针比较交换，一趟确定一个
+</code></pre>
+<p>  选择排序类</p>
+<pre><code>  简单选择排序：在待查找序列中选择最小的值，放入已确定序列末尾，一趟确定一个
+
+  堆排序：
+  大顶堆：每个节点的值都 大于 或等于其子节点的值，用于升序排列
+  小顶堆：每个节点的值都 小于 或等于其子节点的值，用于降序排列
+
+  1构建二叉树堆
+  2按照规律交换每个子树的值
+</code></pre>
+<p>  归并排序</p>
+<pre><code>  分而治之，大序列分小序列排序，排序后小序列间进行排序，组成大序列，循环
+</code></pre>
+<p>  算法的时间复杂度，空间复杂度</p>
+</li>
+<li><p>查找：</p>
+<p>  顺序查找</p>
+<p>  二分查找</p>
+<p>  散列查找（线性探测法，平方探测，链地址法）求ASL</p>
+<pre><code>  线性探测：冲突后+1移位寻找空位
+  平方探测：冲突后1^2,-1^2,2^2,-2^2，...以此类推
+  链地址：冲突后，添加链表
+
+  冲突一次，该数据的查找次数+1,初始查找次数为1
+  ASL平均查找长度=sum（各数据查找次数）/数据个数
+</code></pre>
+</li>
+</ul>
+<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><h2 id="代码题"><a href="#代码题" class="headerlink" title="代码题"></a>代码题</h2><h3 id="链表：一律使用带头节点的链表，方便操作"><a href="#链表：一律使用带头节点的链表，方便操作" class="headerlink" title="链表：一律使用带头节点的链表，方便操作"></a>链表：一律使用带头节点的链表，方便操作</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//结点结构体</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">LNode</span>&#123;</span></span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">LNode</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125;LNode,*List;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化申请</span></span><br><span class="line">List p = (List)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(LNode));<span class="comment">//链表概念</span></span><br><span class="line">LNode *p = (LNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(LNode));<span class="comment">//节点概念</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>逆置带头节点的单链表</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">List <span class="title function_">reverse</span><span class="params">(List head)</span></span><br><span class="line">&#123;</span><br><span class="line">    List p,q,r;<span class="comment">//三指针p q r</span></span><br><span class="line">    p = head-&gt;next;</span><br><span class="line">    q = p-&gt;next;</span><br><span class="line">    p-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(q)&#123;</span><br><span class="line">        <span class="comment">//pqr位置按顺序排列</span></span><br><span class="line">        r = q-&gt;next;</span><br><span class="line">        <span class="comment">//逆指</span></span><br><span class="line">        q-&gt;next = p;</span><br><span class="line">        <span class="comment">//后移</span></span><br><span class="line">        p = q;</span><br><span class="line">        q = r;</span><br><span class="line"></span><br><span class="line">        head-&gt;next = p;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> head;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>带头结点的单链表删除重复元素</p>
+</li>
+<li><p>删除A表中B表出现的元素</p>
+</li>
+<li><p>合并A表与B表</p>
+</li>
+</ul>
+<h3 id="树"><a href="#树" class="headerlink" title="树:"></a>树:</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//节点结构体</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">TNode</span>&#123;</span></span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">TNode</span> *<span class="title">lchild</span>,*<span class="title">rchild</span>;</span></span><br><span class="line">&#125;TNode,*Tree;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化申请</span></span><br><span class="line">Tree p = (Tree)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(TNode));<span class="comment">//树概念</span></span><br><span class="line">TNode *p = (TNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(TNode));<span class="comment">//节点概念</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>n个节点的完全二叉数组，建树</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Tree <span class="title function_">Create</span><span class="params">(ElemType A[],<span class="type">int</span> i)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(i&gt;n) <span class="keyword">return</span> <span class="literal">NULL</span>;<span class="comment">//下标越界</span></span><br><span class="line"></span><br><span class="line">    TNode *p = (TNode*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(TNode))<span class="comment">//申请树节点</span></span><br><span class="line">    p-&gt;data = A[i];</span><br><span class="line">    p-&gt;lchild = Create(A,<span class="number">2</span>*i);</span><br><span class="line">    p-&gt;rchild = Create(A,<span class="number">2</span>*i+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>递归遍历</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//NLR 前序遍历 </span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Travel</span><span class="params">(TNode *t)</span><span class="comment">//t根节点指针</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(t==<span class="literal">NULL</span>) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,t-&gt;data);</span><br><span class="line">    Travel(t-&gt;lchild);</span><br><span class="line">    Travel(t-&gt;rchild);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//LNR 中序遍历 </span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Travel</span><span class="params">(TNode *t)</span><span class="comment">//t根节点指针</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(t==<span class="literal">NULL</span>) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">    Travel(t-&gt;lchild);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,t-&gt;data);</span><br><span class="line">    Travel(t-&gt;rchild);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//LRN 后序遍历 </span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Travel</span><span class="params">(TNode *t)</span><span class="comment">//t根节点指针</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(t==<span class="literal">NULL</span>) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">    Travel(t-&gt;lchild);</span><br><span class="line">    Travel(t-&gt;rchild);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,t-&gt;data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -868,7 +1066,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/04/10/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Windows&Linux/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/04/10/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Linux_Use/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -882,7 +1080,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/04/10/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Windows&Linux/" class="post-title-link" itemprop="url">Windows与Linux常用操作</a>
+            <a href="/2024/04/10/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Linux_Use/" class="post-title-link" itemprop="url">Linux常用操作</a>
         </h2>
 
         <div class="post-meta">
@@ -899,7 +1097,145 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-08-22 14:48:36" itemprop="dateModified" datetime="2024-08-22T14:48:36+08:00">2024-08-22</time>
+                <time title="修改时间：2024-08-31 19:22:26" itemprop="dateModified" datetime="2024-08-31T19:22:26+08:00">2024-08-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">开发工具</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><a href="#linux">Linux</a><ul>
+<li><a href="#ubuntu">Ubuntu</a></li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE">常用配置</a></li>
+<li><a href="#linux-%E5%91%BD%E4%BB%A4">Linux 命令</a></li>
+<li><a href="#shell%E8%84%9A%E6%9C%AC">Shell脚本</a></li>
+<li><a href="#makefile">Makefile</a></li>
+<li><a href="#linux-%E4%B8%8B%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93">Linux 下文件传输</a></li>
+<li><a href="#linux-tools">Linux Tools</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p><a target="_blank" rel="noopener" href="https://www.kernel.org/">Linux 内核</a></p>
+<h3 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h3><p><a target="_blank" rel="noopener" href="https://cn.ubuntu.com/download">Ubuntu-获取镜像</a></p>
+<p><a target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">MSDN-获取镜像</a></p>
+<p>镜像使用建议：</p>
+<ul>
+<li><p>1.虚拟机：使用VMware安装Ubuntu虚拟机，软件密匙网上有。使用镜像文件安装虚拟机即可。</p>
+<p>  网络：不需要担心网络问题，虚拟机将使用虚拟网卡就行网络连接</p>
+</li>
+<li><p>2.本地安装：将iso文件刻录在U盘（UltraISO），并且进入电脑BIOS作为启动盘进行安装。</p>
+<p>  推荐使用自动安装，而不是手动分区，手动容易产生不必要的麻烦和无法解决的问题，消耗时间。所以建议单独出一个硬盘来安装</p>
+<p>  网络：需要网络适配器。先用以太网有线网络连接，或者USB热点。再更新需要的网路适配器，才能使用无线网络</p>
+</li>
+</ul>
+<h3 id="常用配置"><a href="#常用配置" class="headerlink" title="常用配置"></a>常用配置</h3><ul>
+<li>更换软件源：</li>
+</ul>
+<p>Setting-&gt; about-&gt; Software updates-&gt; Download From-Other-&gt; Select Best Server</p>
+<h3 id="Linux-命令"><a href="#Linux-命令" class="headerlink" title="Linux 命令"></a>Linux 命令</h3><pre><code>chmod xxx
+修改文件权限
+xxx分别为 owner权限 group权限 others权限
+例如777，即-rwxrwxrwx，7表示二进制111，分别使rwx置为1有权限
+其他编码使用二进制类推
+
+apt list --installed
+显示系统中所有已安装软件包的列表，包括软件包的名称和版本等信息
+
+service network-manager restart
+重启网卡
+</code></pre>
+<h3 id="Shell脚本"><a href="#Shell脚本" class="headerlink" title="Shell脚本"></a>Shell脚本</h3><p>shell脚本是类似Windows的batch批处理脚本</p>
+<p>shell是纯文本文件，命令从上而下，逐行执行。shell脚本文件命名为***.sh</p>
+<p>文本的首行为：<code>#!/bin/bash</code>,表示使用bash</p>
+<h3 id="Makefile"><a href="#Makefile" class="headerlink" title="Makefile"></a>Makefile</h3><p><a target="_blank" rel="noopener" href="https://liaoxuefeng.com/books/makefile/introduction/index.html">廖雪峰-makefile</a></p>
+<p><em>在Linux环境下，当我们输入make命令时，它就在当前目录查找一个名为Makefile的文件，然后，根据这个文件定义的规则，自动化地执行任意命令，包括编译命令。</em></p>
+<h3 id="Linux-下文件传输"><a href="#Linux-下文件传输" class="headerlink" title="Linux 下文件传输"></a>Linux 下文件传输</h3><ol>
+<li><p>FTP文件传输 + MobaXterm</p>
+</li>
+<li><p>SSH + MobaXterm</p>
+</li>
+<li><p>Samba</p>
+<p> samba是通过网络来进行windows和ubuntu互传文件的</p>
+<p> 所以我们必须保证windows和ubuntu直接可以互相ping通。</p>
+</li>
+</ol>
+<h3 id="Linux-Tools"><a href="#Linux-Tools" class="headerlink" title="Linux Tools"></a>Linux Tools</h3><p><a target="_blank" rel="noopener" href="https://mobaxterm.mobatek.net/">MobaXterm</a></p>
+<ul>
+<li><p>SSH连接虚拟机：</p>
+<p>  1 请打开虚拟机所有网卡,确保windows可以ping成功</p>
+<p>  2 使用SSH和虚拟机ip登录，如果refuse ，请安装openssh-server。</p>
+<p>  指令：sudo apt-get install openssh-server</p>
+<p>  3 apt安装如果报错，请尝试重启，或者后台终结进程</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/04/10/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Windows_Use/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Xuser">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="简 站">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/04/10/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Windows_Use/" class="post-title-link" itemprop="url">Windows常用操作</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-04-10 00:00:00" itemprop="dateCreated datePublished" datetime="2024-04-10T00:00:00+08:00">2024-04-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-08-31 19:20:07" itemprop="dateModified" datetime="2024-08-31T19:20:07+08:00">2024-08-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -930,15 +1266,6 @@
 <li><a href="#%E8%AE%BE%E7%BD%AEwindows%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E9%A1%B9-win10">设置Windows开机启动项 WIN10</a></li>
 <li><a href="#%E8%AE%BE%E7%BD%AEwindows%E5%AE%9A%E6%97%B6%E8%87%AA%E5%8A%A8%E4%BB%BB%E5%8A%A1-win10">设置Windows定时自动任务 WIN10</a></li>
 <li><a href="#windows-tools">Windows Tools</a></li>
-</ul>
-</li>
-<li><a href="#linux">Linux</a><ul>
-<li><a href="#ubuntu">Ubuntu</a></li>
-<li><a href="#%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE">常用配置</a></li>
-<li><a href="#linux-%E5%91%BD%E4%BB%A4">Linux 命令</a></li>
-<li><a href="#shell%E8%84%9A%E6%9C%AC">Shell脚本</a></li>
-<li><a href="#makefile">Makefile</a></li>
-<li><a href="#linux-tools">Linux Tools</a></li>
 </ul>
 </li>
 </ul>
@@ -1024,51 +1351,6 @@
 <p>  由HP实验室开发 由Google维护的开源的​光学字符识别（OCR）引擎，可以在 Apache 2.0 许可下获得。</p>
 <p>  ​它可以直接使用，或者（对于程序员）使用 API 从图像中​提取输入，包括手写的或打印的文本。</p>
 <p>  1.安装Tesseract——github UB-Mannheim<br>  需要勾选additional script 的han<br>  2.Tesseract-OCR添加到环境变量，添加TESSDATA_PREFIX，路径tessdata<br>  tesseract -v查看版本<br>  tesseract –list-langs查看语言包<br>  3.python开发<br>  pip install pytesseract<br>  进入python安装包的路径：D:\Program Files\Python37\Lib\site-packages\pytesseract<br>  编辑文件：pytesseract.py<br>  修改tesseract_cmd &#x3D; ‘D:\Program Files\Tesseract-OCR&#x2F;tesseract.exe’，修改后在python中运行就不会报错了。</p>
-</li>
-</ul>
-<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p><a target="_blank" rel="noopener" href="https://www.kernel.org/">Linux 内核</a></p>
-<h3 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h3><p><a target="_blank" rel="noopener" href="https://cn.ubuntu.com/download">Ubuntu-获取镜像</a></p>
-<p><a target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">MSDN-获取镜像</a></p>
-<p>镜像使用建议：</p>
-<ul>
-<li><p>1.虚拟机：使用VMware安装Ubuntu虚拟机，软件密匙网上有。使用镜像文件安装虚拟机即可。</p>
-<p>  网络：不需要担心网络问题，虚拟机将使用虚拟网卡就行网络连接</p>
-</li>
-<li><p>2.本地安装：将iso文件刻录在U盘（UltraISO），并且进入电脑BIOS作为启动盘进行安装。</p>
-<p>  推荐使用自动安装，而不是手动分区，手动容易产生不必要的麻烦和无法解决的问题，消耗时间。所以建议单独出一个硬盘来安装</p>
-<p>  网络：需要网络适配器。先用以太网有线网络连接，或者USB热点。再更新需要的网路适配器，才能使用无线网络</p>
-</li>
-</ul>
-<h3 id="常用配置"><a href="#常用配置" class="headerlink" title="常用配置"></a>常用配置</h3><ul>
-<li>更换软件源：</li>
-</ul>
-<p>Setting-&gt; about-&gt; Software updates-&gt; Download From-Other-&gt; Select Best Server</p>
-<h3 id="Linux-命令"><a href="#Linux-命令" class="headerlink" title="Linux 命令"></a>Linux 命令</h3><ul>
-<li><p>chmod xxx</p>
-<p>  修改文件权限</p>
-<p>  xxx分别为 owner权限 group权限 others权限</p>
-<p>  例如777，即-rwxrwxrwx，7表示二进制111，分别使rwx置为1有权限</p>
-<p>  其他编码使用二进制类推</p>
-</li>
-<li><p>apt list –installed</p>
-<p>  显示系统中所有已安装软件包的列表，包括软件包的名称和版本等信息</p>
-</li>
-<li><p>service network-manager restart</p>
-<p>  重启网卡</p>
-</li>
-</ul>
-<h3 id="Shell脚本"><a href="#Shell脚本" class="headerlink" title="Shell脚本"></a>Shell脚本</h3><p>shell脚本是类似Windows的batch批处理脚本</p>
-<p>shell是纯文本文件，命令从上而下，逐行执行。shell脚本文件命名为***.sh</p>
-<p>文本的首行为：<code>#!/bin/bash</code>,表示使用bash</p>
-<h3 id="Makefile"><a href="#Makefile" class="headerlink" title="Makefile"></a>Makefile</h3><p><a target="_blank" rel="noopener" href="https://liaoxuefeng.com/books/makefile/introduction/index.html">廖雪峰-makefile</a></p>
-<p><em>在Linux环境下，当我们输入make命令时，它就在当前目录查找一个名为Makefile的文件，然后，根据这个文件定义的规则，自动化地执行任意命令，包括编译命令。</em></p>
-<h3 id="Linux-Tools"><a href="#Linux-Tools" class="headerlink" title="Linux Tools"></a>Linux Tools</h3><p><a target="_blank" rel="noopener" href="https://mobaxterm.mobatek.net/">MobaXterm</a></p>
-<ul>
-<li><p>SSH连接虚拟机：</p>
-<p>  1 请打开虚拟机所有网卡,确保windows可以ping成功</p>
-<p>  2 使用SSH和虚拟机ip登录，如果refuse ，请安装openssh-server。</p>
-<p>  指令：sudo apt-get install openssh-server</p>
-<p>  3 apt安装如果报错，请尝试重启，或者后台终结进程</p>
 </li>
 </ul>
 
@@ -1443,137 +1725,11 @@ git clone &lt;repo_http&gt; 克隆远程仓库
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/12/11/%E7%94%9F%E6%B4%BB%E7%BB%8F%E9%AA%8C/%E5%90%83%E7%A9%BF%E4%BD%8F%E8%A1%8C%E7%94%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Xuser">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="简 站">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/12/11/%E7%94%9F%E6%B4%BB%E7%BB%8F%E9%AA%8C/%E5%90%83%E7%A9%BF%E4%BD%8F%E8%A1%8C%E7%94%A8/" class="post-title-link" itemprop="url">生活经验</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-12-11 00:00:00" itemprop="dateCreated datePublished" datetime="2023-12-11T00:00:00+08:00">2023-12-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-08-27 20:33:00" itemprop="dateModified" datetime="2024-08-27T20:33:00+08:00">2024-08-27</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB%E7%BB%8F%E9%AA%8C/" itemprop="url" rel="index"><span itemprop="name">生活经验</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ul>
-<li><a href="#%E4%B8%AA%E4%BA%BA%E5%90%83%E7%A9%BF%E4%BD%8F%E8%A1%8C">个人：吃穿住行</a><ul>
-<li><a href="#%E5%90%83">吃</a></li>
-<li><a href="#%E7%A9%BF">穿</a></li>
-<li><a href="#%E4%BD%8F">住</a></li>
-<li><a href="#%E8%A1%8C">行</a></li>
-<li><a href="#%E6%96%87%E5%85%B7">文具</a></li>
-</ul>
-</li>
-<li><a href="#%E7%A4%BE%E4%BC%9A%E8%A7%84%E5%88%99">社会：规则</a><ul>
-<li><a href="#%E9%80%80%E4%BC%91%E9%87%91%E9%A2%86%E5%8F%96%E8%A7%84%E5%88%99">退休金领取规则</a></li>
-<li><a href="#%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9">医疗保险</a></li>
-</ul>
-</li>
-<li><a href="#%E7%A4%BE%E4%BC%9A%E5%88%92%E5%88%86">社会：划分</a></li>
-</ul>
-<h2 id="个人：吃穿住行"><a href="#个人：吃穿住行" class="headerlink" title="个人：吃穿住行"></a>个人：吃穿住行</h2><h3 id="吃"><a href="#吃" class="headerlink" title="吃"></a>吃</h3><ul>
-<li>电器：电热锅，电饭煲，热水壶</li>
-<li>干粮：麦片，鸡蛋，饼干，吐司，红绿豆</li>
-<li>调味料：​生抽，油，​孜然，黑胡椒，干辣椒圈</li>
-<li>洗洁用品：百洁布，洗洁精</li>
-</ul>
-<h3 id="穿"><a href="#穿" class="headerlink" title="穿"></a>穿</h3><ul>
-<li><p>上衣：</p>
-<p>  短袖：优衣库（版型合适）</p>
-<p>  外套：冲锋衣（轻便防风）</p>
-</li>
-<li><p>裤子：滑板工装裤（耐用百搭）</p>
-</li>
-<li><p>鞋：匡威（鞋头防水，轻便百搭）</p>
-</li>
-</ul>
-<h3 id="住"><a href="#住" class="headerlink" title="住"></a>住</h3><ul>
-<li>睡眠：睡袋，耳塞</li>
-<li>卫生：酒精 （消毒&#x2F;杀虫剂），​84消毒液，肥皂</li>
-</ul>
-<h3 id="行"><a href="#行" class="headerlink" title="行"></a>行</h3><h3 id="文具"><a href="#文具" class="headerlink" title="文具"></a>文具</h3><ul>
-<li>金属自动笔</li>
-<li>得力连中三元黑笔</li>
-<li>16k车线本(教材书大小)</li>
-</ul>
-<h2 id="社会：规则"><a href="#社会：规则" class="headerlink" title="社会：规则"></a>社会：规则</h2><h3 id="退休金领取规则"><a href="#退休金领取规则" class="headerlink" title="退休金领取规则"></a>退休金领取规则</h3><h3 id="医疗保险"><a href="#医疗保险" class="headerlink" title="医疗保险"></a>医疗保险</h3><ul>
-<li><p>社保</p>
-</li>
-<li><p>城乡居民医保：不积累年限，如果参加了工作，不需要重复缴纳。通常是前一年的年底缴纳，明年享受，但是没有缴纳的话，无法享受，仅此而已，断缴只影响下一年的使用</p>
-</li>
-<li><p>商业保险：百万医疗，重疾险</p>
-</li>
-</ul>
-<h2 id="社会：划分"><a href="#社会：划分" class="headerlink" title="社会：划分"></a>社会：划分</h2><ul>
-<li><p>产业结构：</p>
-<p>  第一产业 农业</p>
-<p>  第二产业 实体制造业</p>
-<p>  第三产业 服务业互联网等</p>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -1636,8 +1792,9 @@ git clone &lt;repo_http&gt; 克隆远程仓库
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">9</span>
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1650,7 +1807,7 @@ git clone &lt;repo_http&gt; 克隆远程仓库
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
